@@ -129,13 +129,6 @@
 	cursor: pointer;
 }
 
-/* FAQ */
-
-.faq-question{
-  
-}
-
-
 /* Comment Section */
 
 .hcb-shadow-m{
@@ -143,9 +136,12 @@
 }
 
 /* RSVP Section */
-.rsvp-container{
-  height: 800px;
-  width: auto;
+#rsvp-section{
+  background-image: url("../images/rsvp_parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rsvp-container img{
