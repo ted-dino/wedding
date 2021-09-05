@@ -6,22 +6,28 @@
   scroll-behavior: smooth;
 }
 
+
 :root{
   --title-font : "Allura", cursive;
   --text-font: "Raleway", sans-serif;
 }
 
+
+
 /* Hero Section */
 #hero-section {
-  /* display: none; */
+  display: none;
   text-align: center;
-  background-image: url(../images/header_img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0;
+  background-color: #c9c5c2;
+}
+
+#hero-section .header-img{
+  padding: 0;
+  margin: 0;
 }
 
 #hero-section .container-fluid {
-  padding: 10% 15% 10%;
   text-align: left;
 }
 
@@ -43,14 +49,14 @@
 
 .couple-name{
   font-family: var(--title-font);
-  font-size: 10rem;
+  font-size: 10vw;
   width: 500px;
   color: #fff;
   line-height: 1;
 }
 .subheading{
   font-family: var(--title-font);
-  font-size: 3.5rem;
+  font-size: 5vw;
   color: #fff;
   line-height: 0;
   margin-bottom: 50px;
@@ -58,6 +64,7 @@
 
 /* The Couple */
 #couple-section, #faq-section{
+  display: none;
   padding-top: 100px; 
 }
 
@@ -83,6 +90,7 @@
 /* Wedding Venue */
 
 #location{
+  display: none;
   padding-top: 50px;
 }
 
@@ -115,6 +123,9 @@
 }
 
 /* Gallery */
+#gallery-section{
+  display: none;
+}
 #gallery-section img{
 	max-width: 100%;
 }
@@ -130,18 +141,31 @@
 }
 
 /* Comment Section */
+#comment-section{
+  display: none;
+}
 
+#hcb_file_label, .home-desc, .hcb-icon{
+  visibility: hidden;
+}
 .hcb-shadow-m{
   width: 500px;
 }
 
 /* RSVP Section */
 #rsvp-section{
+  display: none;
   background-image: url("../images/rsvp_parallax.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+  
+.rsvp-container{
+  width: 600px;
+  height: 800px;
+
 }
 
 .rsvp-container img{
@@ -217,7 +241,7 @@
 /* Typewriter effect end */
 
 /* animation */
-/* .animate-bottom {
+.animate-bottom {
   animation-name: animatebottom;
   animation-duration: 3s;
 }
@@ -231,19 +255,38 @@
     bottom: 0;
     opacity: 1;
   }
-} */
+}
 
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { ... } */
+@media (max-width: 576px) { 
+  #hero-section .header-img{
+    width: 576px;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60% 0;
+  }
 
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { ... } */
+ }
 
-/* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
+@media (max-width: 768px) { 
+  #hero-section .header-img{
+    width: 768px;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60% 0;
+  }
 
-/* X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */
+}
+@media (max-width: 992px) { 
+  #hero-section .header-img{
+    width: 992px;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 60% 0;
+  }
+}
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) { ... } */
+@media (max-width: 1200px) { 
+  #hero-section .header-img{
+    width: 1200px;
+  }
+}
