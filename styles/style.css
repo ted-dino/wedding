@@ -191,7 +191,7 @@
 .hello-effect {
   float: left;
   border-right: 0.2em solid transparent;
-  width: 10.5ch;
+  width: 11ch;
   margin: auto;
   white-space: nowrap;
   overflow: hidden;
@@ -204,7 +204,6 @@
   opacity: 0;
   border-right: .2em solid transparent;
   width: 10ch;
-  margin: 1px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   animation: hide 1s step-end 3s forwards, typing 2s steps(20, end) 4s,
@@ -262,7 +261,21 @@
     width: 576px;
     height: 100vh;
     object-fit: cover;
-    object-position: 60% 0;
+    object-position: 10% 0;
+  }
+
+  .hero-text{
+    position: absolute;
+    bottom: 10%;
+    top: 80%;
+  }
+
+  .couple-name{
+    font-size: 4rem;
+  }
+
+  .subheading{
+    font-size: 3rem;
   }
 
  }
@@ -273,6 +286,12 @@
     height: 100vh;
     object-fit: cover;
     object-position: 60% 0;
+  }
+
+  .hero-text{
+    position: absolute;
+    bottom: 10%;
+    top: 80%;
   }
 
 }

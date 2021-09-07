@@ -22,10 +22,8 @@
 
 <body onload="myFunction()">
 
-  <!-- <body> -->
 
-
-  <div class="typing-container" id="loader">
+  <div class="typing-container d-flex justify-content-center align-items-center flex-sm-column flex-md-column flex-lg-column" id="loader">
     <p class="hello-effect">He proposed,</p>
     <p class="hello-after">She said Yes!</p>
   </div>
@@ -273,7 +271,7 @@
     var myVar;
 
     function myFunction() {
-      myVar = setTimeout(showPage, 8000);
+      myVar = setTimeout(showPage, 1000);
     }
 
     function showPage() {
