@@ -6,306 +6,92 @@
   scroll-behavior: smooth;
 }
 
-
-:root{
-  --title-font : "Allura", cursive;
+:root {
+  --title-font: "Allura", cursive;
   --text-font: "Raleway", sans-serif;
 }
 
-
-
-/* Hero Section */
-#hero-section {
-  display: none;
-  text-align: center;
-  padding: 0;
-  background-color: #c9c5c2;
+.nav-link:hover,
+.nav-link:focus {
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-#hero-section .header-img{
-  padding: 0;
-  margin: 0;
+.hero-section {
+  background-image: url(../images/header_img.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-#hero-section .container-fluid {
-  text-align: left;
-}
-
-.hero-text{
-  width: auto;
-  height: auto;
+.hero-section h1 {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 20%;
-  left: 10%;
-
-}
-.hero-text h1 span{
-  display: block;
-}
-.hero-text a{
-  color: #000000;
-  font-weight: 900;
-}
-
-.couple-name{
-  font-family: var(--title-font);
-  font-size: 10vw;
+  top: 15%;
+  left: 200px;
   width: 500px;
-  color: #fff;
-  line-height: 1;
-}
-.subheading{
-  font-family: var(--title-font);
-  font-size: 5vw;
-  color: #fff;
-  line-height: 0;
-  margin-bottom: 50px;
 }
 
-/* The Couple */
-#couple-section, #faq-section{
-  display: none;
-  padding-top: 100px; 
-}
-
-#couple-section .img-fluid{
-  margin-bottom: 30px;
-  
-}
-
-#couple-section .img-fluid:hover{
-    position: relative;
-    top: -4px;
-}
-
-.his p, .her p{
-  width: 470px;
-  line-height: 27px;
-}
-
-.heart-icon{
-  padding: 35px;
-}
-
-/* Wedding Venue */
-
-#location{
-  display: none;
-  padding-top: 50px;
-}
-
-#location img{
-  padding: 0 50px;
-}
-
-#location a{
-  text-decoration: none;
-  color: #000000;
-  font-weight: 900;
-}
-
-#location a:hover{
-  color: #cac6c3;
-}
-
-/* Event Section */
-.event-text{
-  margin-top: 30px;
-  font-family: var(--title-font);
-  font-size: 4rem;
-}
-
-.hero-text a{
+.hero-section a {
+  margin-inline: auto;
+  width: 21.875rem;
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
   padding: 8px 25px;
 }
 
-/* Gallery */
-#gallery-section{
-  display: none;
-}
-#gallery-section img{
-	max-width: 100%;
-}
-.gallery{
-	padding: 80px 0;
-}
-.gallery img{
-	background-color: #ffffff;
-	padding: 15px;
-	width: 100%;
-	box-shadow: 0 0 15px rgba(0,0,0,0.3);
-	cursor: pointer;
+.hero-section span {
+  font-family: var(--title-font);
 }
 
-/* Comment Section */
-#comment-section{
-  display: none;
+.hero-section .main_text {
+  font-size: 12.12rem;
+  line-height: 9.1875rem;
 }
 
-#hcb_file_label, .home-desc, .hcb-icon{
-  visibility: hidden;
+.hero-section .sub_text {
+  font-size: 1.8em;
+  line-height: 6.75rem;
 }
-.hcb-shadow-m{
-  width: 500px;
-}
-
-/* RSVP Section */
-#rsvp-section{
-  display: none;
-  background-image: url("../images/rsvp_parallax.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  
-.rsvp-container{
-  width: 600px;
-  height: 800px;
-
-}
-
-.rsvp-container img{
-  width: 300px;
-  height: 211px;
-}
-
-.form-floating{
-  margin-bottom: 25px;
-}
-
-
-
-/* Typewriter effect start : credits (https://codepen.io/weihungchin/pen/XPZJwq) */
-.typing-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 64.38rem;
-}
-
-.hello-effect {
-  float: left;
-  border-right: 0.2em solid transparent;
-  width: 11ch;
-  margin: auto;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 0.85s steps(5, end), blink-caret 0.5s step-end 8 alternate;
-  color: #000000;
-  font-size: 5rem;
-}
-
-.hello-after {
-  opacity: 0;
-  border-right: .2em solid transparent;
-  width: 10ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: hide 1s step-end 3s forwards, typing 2s steps(20, end) 4s,
-      blink-caret .7s step-end infinite alternate;
-  color: #000000;
-  font-size: 5rem;
-}
-
-@keyframes hide {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink-caret {
-  50% {
-    border-color: lime;
-  }
-
-  100% {
-    border-color: transparent;
-  }
-}
-/* Typewriter effect end */
-
-/* animation */
-.animate-bottom {
-  animation-name: animatebottom;
-  animation-duration: 3s;
-}
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-@media (max-width: 576px) { 
-  #hero-section .header-img{
-    width: 576px;
+@media (max-width: 93.125rem) {
+  .hero-section {
+    width: 100%;
     height: 100vh;
-    object-fit: cover;
-    object-position: 10% 0;
+    background-position: 70% 0;
   }
-
-  .hero-text{
+  .hero-section h1 {
     position: absolute;
-    bottom: 10%;
-    top: 80%;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0);
+    width: 50rem;
   }
-
-  .couple-name{
-    font-size: 4rem;
+  .hero-section .main_text {
+    font-size: 7.3rem;
+    line-height: 3.7rem;
   }
-
-  .subheading{
-    font-size: 3rem;
-  }
-
- }
-
-@media (max-width: 768px) { 
-  #hero-section .header-img{
-    width: 768px;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 60% 0;
-  }
-
-  .hero-text{
-    position: absolute;
-    bottom: 10%;
-    top: 80%;
-  }
-
-}
-@media (max-width: 992px) { 
-  #hero-section .header-img{
-    width: 992px;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 60% 0;
+  .hero-section .sub_text {
+    line-height: 1;
   }
 }
-
-@media (max-width: 1200px) { 
-  #hero-section .header-img{
-    width: 1200px;
+@media (max-width: 68.75rem) {
+  .hero-section {
+    background-image: none;
+    background-color: #c1bdba;
+  }
+  .hero-section h1 {
+    top: 30%;
+    width: auto;
+    line-height: 7rem;
+  }
+  .hero-section .main_text {
+    line-height: 5.7rem;
+  }
+  .hero-section .sub_text {
+    font-size: 2.7rem;
+    line-height: 4.3125rem;
+  }
+  .hero-section a {
+    width: auto;
   }
 }

@@ -1,81 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pat and Andrea</title>
+    <link rel="icon" href="images/web-icon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pat and Andrea</title>
-  <link rel="icon" href="images/web-icon.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
+    />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-</head>
-
-<body onload="myFunction()">
-
-
-  <div class="typing-container d-flex justify-content-center align-items-center flex-sm-column flex-md-column flex-lg-column" id="loader">
-    <p class="hello-effect">He proposed,</p>
-    <p class="hello-after">She said Yes!</p>
-  </div>
-
-  <!-- HERO SECTION -->
-  <header id="hero-section" class="animate-bottom">
-
+  <body>
+    <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="https://c.tenor.com/Z6gmDPeM6dgAAAAC/dance-moves.gif" target="blank">
-          <img src="images/header_icon.png" alt="rickroll :D">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a
+          class="navbar-brand text-light fw-bold"
+          href="https://tinyurl.com/2p87v5b8"
+          target="_blank"
+          >jackPatKayDrei</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link fs-6 text-white" href="#"><span><img class="pe-1" src="images/heart-icon.png"
-                  alt="">Home</a>
-            <a class="nav-link fs-6 text-white" href="#couple-section"><span><img class="pe-1"
-                  src="images/heart-icon.png" alt="">Groom & Bride</a>
-            <a class="nav-link fs-6 text-white" href="#location"><span><img class="pe-1" src="images/heart-icon.png"
-                  alt="">Location</a>
-            <a class="nav-link fs-6 text-white" href="#gallery-section"><span><img class="pe-1"
-                  src="images/heart-icon.png" alt="">Gallery</a>
-            <a class="nav-link fs-6 text-white" href="#faq-section"><span><img class="pe-1" src="images/heart-icon.png"
-                  alt="">FAQ</a>
-            <a class="nav-link fs-6 text-white" href="#rsvp-section"><span><img class="pe-1" src="images/heart-icon.png"
-                  alt="">RSVP</a>
-            <a class="nav-link fs-6 text-white" href="#comment-section"><span><img class="pe-1"
-                  src="images/heart-icon.png" alt="">Comment Section</a>
-          </div>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light active"
+                aria-current="page"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >The Couple</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Venue</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >RSVP</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Comment</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <div class="align-items-center position-relative">
-      <img src="images/header_img.jpg" alt="the couple" class="header-img img-fluid">
-      <div class="position-absolute hero-text">
-        <h1>
-          <span class="couple-name">Patrick & Andrea</span>
-          <span class="subheading">are getting married!</span>
-        </h1>
-        <a href="#location">View Location</a>
-      </div>
-    </div>
-
-  </header>
-
-  <!-- COUPLE SECTION -->
-  <section id="couple-section">
+    <!-- HERO SECTION -->
+    <section class="hero-section text-center text-light">
+      <h1>
+        <span class="main_text">Patrick & Andrea</span>
+        <span class="sub_text">are getting married!</span>
+        <a href="#location">Venue</a>
+      </h1>
+    </section>
+    <!-- COUPLE SECTION -->
+    <!-- <section id="couple-section">
 
     <div class="d-flex justify-content-center align-items-center text-center flex-sm-column flex-md-column flex-lg-row">
 
@@ -93,19 +148,19 @@
 
     </div>
 
-  </section>
+  </section> -->
 
-  <!-- WEDDING VENUE -->
-  <section id="location" class="vh-100 text-center">
+    <!-- WEDDING VENUE -->
+    <!-- <section id="location" class="vh-100 text-center">
     <img src="images/img-border.png" alt="" class="img-fluid">
     <h2 class="event-text">Wedding Venue</h2>
     <a href="https://goo.gl/maps/h52CCZii9ZjLKhGC9" target="blank">Open in Google Map</a>
     <iframe class="w-100 h-75 mt-3" loading="lazy" allowfullscreen
       src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdecst2rIlzMRjorccd2LrYk&key=AIzaSyADoV_DJ1HUv3N7yj1SJvUpNb8SVSSe8uU"></iframe>
-  </section>
+  </section> -->
 
-  <!-- GALLERY -->
-  <section id="gallery-section" class="gallery">
+    <!-- GALLERY -->
+    <!-- <section id="gallery-section" class="gallery">
     <h2 class="event-text text-center">Best Moments</h2>
 
     <div class="container-lg">
@@ -140,12 +195,10 @@
       </div>
     </div>
 
-    <!-- Modal -->
     <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -155,10 +208,10 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
-  <!-- FAQ Section -->
-  <section id="faq-section" class="mx-5">
+    <!-- FAQ Section -->
+    <!-- <section id="faq-section" class="mx-5">
 
     <h2 class="event-text text-center">Frequently Asked Questions</h2>
 
@@ -213,10 +266,10 @@
     </div>
     <hr>
 
-  </section>
+  </section> -->
 
-  <!-- RSVP -->
-  <section id="rsvp-section">
+    <!-- RSVP -->
+    <!-- <section id="rsvp-section">
     <form action="https://formsubmit.co/weddingfor77@gmail.com" method="POST"
       class="container needs-validation rsvp-container text-center">
       <h2 class="event-text text-center">RSVP</h2>
@@ -244,9 +297,10 @@
     </form>
 
   </section>
-  <hr>
-  <!-- Comment Section -->
-  <section id="comment-section" class="container">
+  <hr> -->
+
+    <!-- Comment Section -->
+    <!-- <section id="comment-section" class="container">
     <div id="HCB_comment_box">
       <a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...
     </div>
@@ -254,44 +308,28 @@
 
   <footer class="py-3 my-4 border-top " id="footer" style="display: none;">
     <p class="text-center text-muted">© 2021 All Rights Reserved.</p>
-  </footer>
+  </footer> -->
 
-  <script type="text/javascript">
-    var nav = document.querySelector('nav');
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
 
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 100) {
-        nav.classList.add('bg-dark', 'shadow');
-      } else {
-        nav.classList.remove('bg-dark', 'shadow');
-      }
-    });
-  </script>
-  <script>
-    var myVar;
-
-    function myFunction() {
-      myVar = setTimeout(showPage, 8000);
-    }
-
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("hero-section").style.display = "block";
-      document.getElementById("couple-section").style.display = "block";
-      document.getElementById("location").style.display = "block";
-      document.getElementById("gallery-section").style.display = "block";
-      document.getElementById("faq-section").style.display = "block";
-      document.getElementById("rsvp-section").style.display = "block";
-      document.getElementById("comment-section").style.display = "block";
-      document.getElementById("footer").style.display = "block";
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript"
-    id="hcb"> /*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%240xtpaCc2sSUa0EtnqHqWy." + "&opts=16798&num=10&ts=1630832074063"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/</script>
-  <script>
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="text/javascript"
+    id="hcb"> if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%240xtpaCc2sSUa0EtnqHqWy." + "&opts=16798&num=10&ts=1630832074063"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })();
+  </script> -->
+    <!-- <script>
     document.addEventListener("click", function (e) {
       if (e.target.classList.contains("gallery-item")) {
         const src = e.target.getAttribute("src");
@@ -300,5 +338,6 @@
         myModal.show();
       }
     })
-  </script>
-</body>
+  </script> -->
+  </body>
+</html>
