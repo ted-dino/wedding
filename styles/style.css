@@ -93,5 +93,35 @@
   }
   .hero-section a {
     width: auto;
+    line-height: 2.1875rem;
   }
+}
+
+#couple-section .photo {
+  max-width: 300px;
+}
+
+.modal-content {
+  width: auto;
+  margin-inline: auto;
+}
+
+.gallery img {
+  background-color: #ffffff;
+  padding: 15px;
+  width: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.input-container {
+  max-width: 31.25rem;
+  margin-inline: auto;
+}
+#comment-section #HCB_comment_box .comment .likes {
+  position: relative;
+}
+
+#HCB_comment_box .hcb-icon {
+  display: none;
 }

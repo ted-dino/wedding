@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pat and Andrea</title>
-    <link rel="icon" href="images/web-icon.png" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -27,6 +25,8 @@
       type="text/css"
       href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
     />
+    <title>Pat and Andrea</title>
+    <link rel="icon" href="images/web-icon.png" />
   </head>
 
   <body>
@@ -130,214 +130,350 @@
       </h1>
     </section>
     <!-- COUPLE SECTION -->
-    <!-- <section id="couple-section">
+    <section id="couple-section" class="headline">
+      <div
+        class="
+          container
+          d-flex
+          justify-content-center
+          align-items-center
+          text-center
+          flex-wrap flex-sm-column flex-md-column flex-lg-row
+          mt-5
+        "
+      >
+        <div class="photo">
+          <img src="images/he.png" alt="his photo" />
+          <h2>The Groom</h2>
+        </div>
 
-    <div class="d-flex justify-content-center align-items-center text-center flex-sm-column flex-md-column flex-lg-row">
+        <div class="heart-icon m-5">
+          <img src="images/heart_icon.svg" alt="" />
+        </div>
 
-      <div class="his">
-        <img src="images/he.png" alt="his photo" class="img-fluid">
+        <div class="photo">
+          <img src="images/she.jpg" alt="her photo" />
+          <h2>The Bride</h2>
+        </div>
       </div>
-
-      <div class="heart-icon">
-        <img src="images/heart_icon.svg" alt="">
-      </div>
-
-      <div class="her">
-        <img src="images/she.jpg" alt="her photo" class="img-fluid">
-      </div>
-
-    </div>
-
-  </section> -->
+    </section>
 
     <!-- WEDDING VENUE -->
-    <!-- <section id="location" class="vh-100 text-center">
-    <img src="images/img-border.png" alt="" class="img-fluid">
-    <h2 class="event-text">Wedding Venue</h2>
-    <a href="https://goo.gl/maps/h52CCZii9ZjLKhGC9" target="blank">Open in Google Map</a>
-    <iframe class="w-100 h-75 mt-3" loading="lazy" allowfullscreen
-      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJdecst2rIlzMRjorccd2LrYk&key=AIzaSyADoV_DJ1HUv3N7yj1SJvUpNb8SVSSe8uU"></iframe>
-  </section> -->
+    <section id="location" class="vh-100 text-center headline">
+      <img src="images/img-border.png" alt="" class="img-fluid" />
+      <h2 class="event-text">Wedding Venue</h2>
+      <a href="https://goo.gl/maps/h52CCZii9ZjLKhGC9" target="blank"
+        >Open in Google Map</a
+      >
+      <iframe
+        class="w-100 h-75 mt-3"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3657145005272!2d121.0553653154071!3d14.578224981531562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c86ab72ce775%3A0x89ad8bdd71dc8a8e!2sOne%20San%20Miguel%20Avenue!5e0!3m2!1sen!2sph!4v1639055143936!5m2!1sen!2sph"
+      ></iframe>
+    </section>
 
     <!-- GALLERY -->
-    <!-- <section id="gallery-section" class="gallery">
-    <h2 class="event-text text-center">Best Moments</h2>
+    <section id="gallery-section" class="gallery headline">
+      <h2 class="text-center display-1">Best Moments</h2>
 
-    <div class="container-lg">
-      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-        <div class="col">
-          <img src="images/gallery/image_1.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_2.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_3.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_4.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_5.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_6.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_7.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_8.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
-        </div>
-        <div class="col">
-          <img src="images/gallery/image_9.jpg" class="gallery-item img-fluid" alt="gallery" loading="lazy">
+      <div class="container-lg text-center">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <img
+              src="images/gallery/image_1.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_2.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_3.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_4.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_5.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_6.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_7.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_8.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/gallery/image_9.jpg"
+              class="gallery-item img-fluid"
+              alt="gallery"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="images/gallery/image_1.jpg" class="modal-img img-fluid" alt="modal img">
+      <div
+        class="modal fade"
+        id="gallery-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/gallery/image_1.jpg"
+                class="modal-img img-fluid"
+                alt="modal img"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </section> -->
+    </section>
 
     <!-- FAQ Section -->
-    <!-- <section id="faq-section" class="mx-5">
+    <section id="faq-section" class="mx-5 headline">
+      <h2 class="mt-5 display-5 text-center">Frequently Asked Questions</h2>
 
-    <h2 class="event-text text-center">Frequently Asked Questions</h2>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Why is RSVP so important?
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body fs-4">It is important for us to identify the guest who are attending or not. Your
-            final headcount for food serving and seating arrangment.
-            This will also serve as confirmation to include the names on the guestlist upon registration.
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed fs-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Why is RSVP so important?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body fs-4">
+              It is important for us to identify the guest who are attending or
+              not. Your final headcount for food serving and seating arrangment.
+              This will also serve as confirmation to include the names on the
+              guestlist upon registration.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed fs-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Can I bring someone else with me? Can I bring my kids?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body fs-4">
+              As much as we'd like to invite everyone, we can only invite a
+              number of guests due to limited seats. When it comes to kids, the
+              reception confirmed that due to current restrictions, they will
+              only allow 5 kids so we alloted this for our cutie ring bearer and
+              immediate family.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed fs-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Do I need to wear face mask and faceshield?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body fs-4">
+              We are encouraging you all to follow the standard minimum health
+              protocol by wearing a face mask and faceshield. Social Distancing
+              and venue protocols must be followed. Please be guided.
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Can I bring someone else with me? Can I bring my kids?
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body fs-4">As much as we'd like to invite everyone, we can only invite a number of
-            guests due to limited seats.
-            When it comes to kids, the reception confirmed that due to current restrictions, they will only allow 5 kids
-            so we alloted this
-            for our cutie ring bearer and immediate family.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Do I need to wear face mask and faceshield?
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body fs-4">We are encouraging you all to follow the standard minimum health protocol by
-            wearing a face mask and faceshield.
-            Social Distancing and venue protocols must be followed. Please be guided.
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-
-  </section> -->
+      <hr />
+    </section>
 
     <!-- RSVP -->
-    <!-- <section id="rsvp-section">
-    <form action="https://formsubmit.co/weddingfor77@gmail.com" method="POST"
-      class="container needs-validation rsvp-container text-center">
-      <h2 class="event-text text-center">RSVP</h2>
+    <section id="rsvp-section" class="headline">
+      <form
+        action="https://formsubmit.co/weddingfor77@gmail.com"
+        method="POST"
+        class="container-lg needs-validation rsvp-container text-center"
+      >
+        <h2 class="mt-5 display-5 text-center">RSVP</h2>
 
-      <img src="images/rsvp_img.png" alt="" class="text-center">
-      <div class="input-container">
-        <div class="form-floating">
-          <input type="text" class="form-control" name="name" placeholder="Name" required>
-          <label for="name">Name</label>
+        <img src="images/rsvp_img.png" alt="" class="text-center img-fluid" />
+        <div class="input-container">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <label for="name">Name</label>
+          </div>
+
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control mt-3"
+              name="email"
+              placeholder="name@example.com"
+            />
+            <label for="email">Email address (Optional)</label>
+          </div>
+
+          <div class="form-floating">
+            <textarea
+              class="form-control mt-3"
+              placeholder="Leave a comment here"
+              name="message"
+              style="height: 150px"
+            ></textarea>
+            <label for="message">Message (Optional)</label>
+          </div>
+
+          <button class="btn btn-primary mt-3" type="submit">
+            Submit form
+          </button>
         </div>
-
-        <div class="form-floating">
-          <input type="email" class="form-control" name="email" placeholder="name@example.com">
-          <label for="email">Email address (Optional)</label>
-        </div>
-
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" name="message"
-            style="height: 150px"></textarea>
-          <label for="message">Message (Optional)</label>
-        </div>
-
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
-    </form>
-
-  </section>
-  <hr> -->
+      </form>
+    </section>
+    <hr />
 
     <!-- Comment Section -->
-    <!-- <section id="comment-section" class="container">
-    <div id="HCB_comment_box">
-      <a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...
-    </div>
-  </section>
+    <section id="comment-section" class="container headline">
+      <div id="HCB_comment_box">
+        <a href="http://www.htmlcommentbox.com">Widget</a> is loading
+        comments...
+      </div>
+    </section>
 
-  <footer class="py-3 my-4 border-top " id="footer" style="display: none;">
-    <p class="text-center text-muted">© 2021 All Rights Reserved.</p>
-  </footer> -->
-
-    <script type="text/javascript">
-      var nav = document.querySelector("nav");
-
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("bg-dark", "shadow");
-        } else {
-          nav.classList.remove("bg-dark", "shadow");
-        }
-      });
+    <footer class="py-3 my-4 border-top" id="footer">
+      <p class="text-center text-muted">© 2021 All Rights Reserved.</p>
+    </footer>
+    <script>
+      ScrollReveal().reveal(".headline", { delay: 500 });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <!-- <script type="text/javascript"
-    id="hcb"> if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%240xtpaCc2sSUa0EtnqHqWy." + "&opts=16798&num=10&ts=1630832074063"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })();
-  </script> -->
-    <!-- <script>
-    document.addEventListener("click", function (e) {
-      if (e.target.classList.contains("gallery-item")) {
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-        myModal.show();
+    <script type="text/javascript" id="hcb">
+      if (!window.hcb_user) {
+        hcb_user = {};
       }
-    })
-  </script> -->
+      (function () {
+        var s = document.createElement("script"),
+          l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+          h = "https://www.htmlcommentbox.com";
+        s.setAttribute("type", "text/javascript");
+        s.setAttribute(
+          "src",
+          h +
+            "/jread?page=" +
+            encodeURIComponent(l).replace("+", "%2B") +
+            "&mod=%241%24wq1rdBcg%240xtpaCc2sSUa0EtnqHqWy." +
+            "&opts=16798&num=10&ts=1630832074063"
+        );
+        if (typeof s != "undefined")
+          document.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+    <script>
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("gallery-item")) {
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(
+            document.getElementById("gallery-modal")
+          );
+          myModal.show();
+        }
+      });
+    </script>
   </body>
 </html>
